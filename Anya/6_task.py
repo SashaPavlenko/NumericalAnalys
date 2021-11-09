@@ -1,23 +1,45 @@
+import math
+import sympy as sy
+from Anya.funcs import sy_func_to_lambda, fitFunc
+import numpy as np
 
+x = sy.Symbol('x')
+t = sy.Symbol('t')
 
-s = """56,7 60,5 47,5 48,5 64,7 65,8 91,3 83,0 48,5 64,8
-16,5 27,5 51,5 28,0 52,5 50,5 49,0 55,5 61,5 55,2
-81,5 69,5 21,8 61,5 53,0 59,5 69,3 73,5 85,0 41,0
-56,4 55,3 56,2 75,5 36,5 38,5 26,9 76,9 58,5 63,7
-30,3 56,5 77,7 29,5 54,3 53,9 57,3 33,5 84,8 63,1
-57,8 65,1 34,9 60,9 58,2 55,3 55,9 53,9 64,0 48,9
-40,0 56, 5 33,5 46,2 64,0 54,3 24,9 44,9 42,1 44,1
-56,0 33,2 60,5 75,1 35,8 69,2 37,7 50,5 50,3 75,6
-52,8 83,2 43,6 75,7 45,8 36,5 49,5 96,5 52,6 69,5
-36,5 50,3 71,3 28,5 45,3 48,8 71,3 24,3 47,5 36,5"""
+f = 1/sy.sqrt(2*sy.pi)*sy.Integral(sy.exp(-t*t/2), (t, 0, x)).doit()
+# Интеграл верятностей Лапласа
+PHI = lambda val: f.subs(x, val).evalf()
 
-l = s.replace("\n", " ").replace(", ", ".").replace(",", ".").split()
+a, deviation, alpha, beta, delta = 20, 7, 22, 27, 2
 
-l = list(map(float, l))
+out = f"""\
+Условие задачи:
+Диаметры деталей распределены по нормальному закону. Среднее
+значение диаметра равно {delta} мм, среднее квадратическое отклонение
+{deviation} мм. Найти вероятность (P_1) того, что диаметр наудачу взятой детали
+будет больше {alpha} мм и меньше {beta} мм; вероятность (P_2) того, что диаметр
+детали отклонится от стандартной длины не более, чем на {delta} мм
 
-if len(l) != 100:
-    raise Exception("IncorrectData")
+Решение:
+Пусть х - длина детали. Если случайная величина х распределена по нормальному 
+закону, то вероятность ее попадания на отрезок [{alpha}; {beta}].
 
+P(alpha < x < beta) = PHI((beta - a)/deviation) - PHI((alpha - a)/deviation)
 
-print(l)
-print(len(l))
+P_1 = P({alpha} < x < {beta}) = PHI(({beta} - {a})/{deviation}) - PHI(({alpha} - {a})/{deviation}) = 
+= PHI({(beta - a)/deviation}) - PHI({(alpha - a)/deviation}) = 
+= {PHI((beta - a)/deviation)} - {PHI((alpha - a)/deviation)} \
+= {PHI((beta - a)/deviation) - PHI((alpha - a)/deviation)}  
+
+Вероятность отклонения длины детали от ее математического ожидания {a} не больше, 
+чем на delta = {delta} мм, очевидно, что есть вероятность того, что длина детали попадает 
+в интервал [{a} - {delta}; {a} + {delta}] и потому вычисляется также с помощью функции Лапласа:
+
+P(a-delta < x < a+delta) = PHI(delta/deviation) - PHI(-delta/deviation)
+P_2 = P({a}-{delta} < x < {a}+{delta}) = PHI({delta}/{deviation}) - PHI(-{delta}/{deviation}) =
+= 2 * PHI({delta}/{deviation}) = 2*PHI({delta/deviation}) =  2*{PHI(delta/deviation)} =
+= {2*PHI(delta/deviation)}
+"""
+
+print(out)
+
