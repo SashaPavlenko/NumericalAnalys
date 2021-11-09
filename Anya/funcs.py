@@ -25,3 +25,17 @@ def fitFunc(val, a, b, func_array):
         return func_array[1]
     else:
         return func_array[2]
+
+def count_included_points(interval, points):
+    """
+    Count number of points that are in interval.
+    :param interval: interval where we check points.
+    :param points: array of points.
+    :return: number of points that are in interval.
+    """
+    count = 0
+    for i in points:
+       if interval[0] <= i and i < interval[1]:
+           # print(f"{interval[0]} <= {i} < {interval[1]}; \n{interval[0]} >= {i} and {i} < {interval[1]} = {interval[0] >= i and i < interval[1]}")
+           count += 1
+    return count

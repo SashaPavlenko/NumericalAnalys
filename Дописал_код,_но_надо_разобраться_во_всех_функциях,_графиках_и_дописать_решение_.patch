@@ -1,0 +1,512 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision c4d96199faee8ae056bef4bce3c4038b293bc9cf)
++++ .idea/workspace.xml	(revision c45df20d20a9634f9ba7bcfbe0faf46b073f38a6)
+@@ -1,7 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="229eb73f-3327-4a8b-bb5c-1a88b54a2953" name="Default Changelist" comment="" />
++    <list default="true" id="229eb73f-3327-4a8b-bb5c-1a88b54a2953" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Anya/7_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/Anya/7_task.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Anya/funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Anya/funcs.py" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -29,6 +33,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="UPDATE_TYPE" value="MERGE" />
+   </component>
+@@ -50,10 +59,11 @@
+     <property name="node.js.path.for.package.tslint" value="project" />
+     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
++    <property name="settings.editor.selected.configurable" value="settings.github" />
+   </component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\Sasha\PycharmProjects\NumericalAnalys\Anya" />
+       <recent name="C:\Users\Sasha\PycharmProjects\NumericalAnalys\lab3" />
+       <recent name="C:\Users\Sasha\PycharmProjects\NumericalAnalys\seminal_2" />
+     </key>
+@@ -65,8 +75,8 @@
+       </set>
+     </option>
+   </component>
+-  <component name="RunManager" selected="Python.7_task">
+-    <configuration name="3_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="Python.7_task (1)">
++    <configuration name="5_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="NumericalAnalys" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -79,7 +89,7 @@
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anya/3_task.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anya/5_task.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -88,7 +98,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="4_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="6_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="NumericalAnalys" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -96,12 +106,12 @@
+         <env name="PYTHONUNBUFFERED" value="1" />
+       </envs>
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Anya" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anya/4_task.py" />
++      <option name="SCRIPT_NAME" value="C:\Users\Sasha\PycharmProjects\NumericalAnalys\Anya\6_task.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -110,7 +120,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="5_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="7_task (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="NumericalAnalys" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -123,7 +133,7 @@
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anya/5_task.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anya/7_task.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -132,7 +142,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="6_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="7_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="NumericalAnalys" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -140,12 +150,12 @@
+         <env name="PYTHONUNBUFFERED" value="1" />
+       </envs>
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Anya" />
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="C:\Users\Sasha\PycharmProjects\NumericalAnalys\Anya\6_task.py" />
++      <option name="SCRIPT_NAME" value="C:\Users\Sasha\PycharmProjects\NumericalAnalys\Anya\7_task.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -154,7 +164,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="7_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="fourth" type="PythonConfigurationType" factoryName="Python">
+       <module name="NumericalAnalys" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -162,12 +172,12 @@
+         <env name="PYTHONUNBUFFERED" value="1" />
+       </envs>
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Anya" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/seminal_2" />
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="C:\Users\Sasha\PycharmProjects\NumericalAnalys\Anya\7_task.py" />
++      <option name="SCRIPT_NAME" value="C:\Users\Sasha\PycharmProjects\NumericalAnalys\seminal_2\5.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -176,7 +186,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="fourth" type="PythonConfigurationType" factoryName="Python">
++    <configuration name="funcs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="NumericalAnalys" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -184,12 +194,12 @@
+         <env name="PYTHONUNBUFFERED" value="1" />
+       </envs>
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/seminal_2" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Anya" />
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="C:\Users\Sasha\PycharmProjects\NumericalAnalys\seminal_2\5.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anya/funcs.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -223,19 +233,19 @@
+     <list>
+       <item itemvalue="Python.pypy" />
+       <item itemvalue="Python.fourth" />
+-      <item itemvalue="Python.3_task" />
+-      <item itemvalue="Python.4_task" />
+       <item itemvalue="Python.5_task" />
+       <item itemvalue="Python.6_task" />
+       <item itemvalue="Python.7_task" />
++      <item itemvalue="Python.7_task (1)" />
++      <item itemvalue="Python.funcs" />
+     </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Python.7_task (1)" />
++        <item itemvalue="Python.funcs" />
+         <item itemvalue="Python.7_task" />
+         <item itemvalue="Python.6_task" />
+         <item itemvalue="Python.5_task" />
+-        <item itemvalue="Python.4_task" />
+-        <item itemvalue="Python.3_task" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -243,8 +253,19 @@
+     <option name="viewStates">
+       <list>
+         <serviceView>
++          <option name="contentProportion" value="0.22930464" />
+           <treeState>
+-            <expand />
++            <expand>
++              <path>
++                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
++                <item name="Python" type="7427dc5b:ServiceModel$ServiceGroupNode" />
++              </path>
++              <path>
++                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
++                <item name="Python" type="7427dc5b:ServiceModel$ServiceGroupNode" />
++                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
++              </path>
++            </expand>
+             <select />
+           </treeState>
+         </serviceView>
+@@ -279,12 +300,35 @@
+       <workItem from="1636362181784" duration="3422000" />
+       <workItem from="1636461296452" duration="14701000" />
+       <workItem from="1636486981421" duration="26000" />
+-      <workItem from="1636487592934" duration="33000" />
++      <workItem from="1636487592934" duration="7052000" />
+     </task>
++    <task id="LOCAL-00001" summary="Changed 6_task.py in Anya to 7_task.py&#10;Removed 6_task.py from Numerical_analys to Numerical_analys/Anya">
++      <created>1636487785077</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1636487785077</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="1" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Changed 6_task.py in Anya to 7_task.py&#10;Removed 6_task.py from Numerical_analys to Numerical_analys/Anya" />
++    <option name="LAST_COMMIT_MESSAGE" value="Changed 6_task.py in Anya to 7_task.py&#10;Removed 6_task.py from Numerical_analys to Numerical_analys/Anya" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="368" y="0" key="#4_(1)" timestamp="1632736024997">
+@@ -307,6 +351,10 @@
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+     <state x="396" y="50" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1633340058470" />
++    <state x="277" y="0" width="726" height="679" key="CommitChangelistDialog2" timestamp="1636498012127">
++      <screen x="0" y="0" width="1280" height="680" />
++    </state>
++    <state x="277" y="0" width="726" height="679" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1636498012127" />
+     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1632736989161">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+@@ -315,22 +363,22 @@
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+     <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1632128944181" />
+-    <state width="1057" height="171" key="GridCell.Tab.0.bottom" timestamp="1636485142939">
++    <state width="930" height="233" key="GridCell.Tab.0.bottom" timestamp="1636497849296">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1057" height="171" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1636485142939" />
+-    <state width="1057" height="171" key="GridCell.Tab.0.center" timestamp="1636485142939">
++    <state width="930" height="233" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1636497849296" />
++    <state width="930" height="233" key="GridCell.Tab.0.center" timestamp="1636497849296">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1057" height="171" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1636485142939" />
+-    <state width="1057" height="171" key="GridCell.Tab.0.left" timestamp="1636485142939">
++    <state width="930" height="233" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1636497849296" />
++    <state width="930" height="233" key="GridCell.Tab.0.left" timestamp="1636497849296">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1057" height="171" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1636485142939" />
+-    <state width="1057" height="171" key="GridCell.Tab.0.right" timestamp="1636485142939">
++    <state width="930" height="233" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1636497849296" />
++    <state width="930" height="233" key="GridCell.Tab.0.right" timestamp="1636497849296">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1057" height="171" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1636485142939" />
++    <state width="930" height="233" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1636497849296" />
+     <state width="1057" height="190" key="GridCell.Tab.1.bottom" timestamp="1635760057387">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+@@ -347,10 +395,14 @@
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+     <state width="1057" height="190" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1635760057386" />
+-    <state x="144" y="0" key="SettingsEditor" timestamp="1636487627223">
++    <state x="144" y="0" key="SettingsEditor" timestamp="1636488121004">
++      <screen x="0" y="0" width="1280" height="680" />
++    </state>
++    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1636488121004" />
++    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1636488215642">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1636487627223" />
++    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1636488215642" />
+     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1634757033484">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+@@ -359,10 +411,10 @@
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+     <state x="349" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1636461695040" />
+-    <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636487658797">
++    <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636497835251">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1636487658797" />
++    <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1636497835251" />
+     <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1636252437724">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+@@ -407,7 +459,8 @@
+     <SUITE FILE_PATH="coverage/NumericalAnalys$6_task.coverage" NAME="6_task Coverage Results" MODIFIED="1636483360156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+     <SUITE FILE_PATH="coverage/NumericalAnalys$test.coverage" NAME="test Coverage Results" MODIFIED="1636466822906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+     <SUITE FILE_PATH="coverage/NumericalAnalys$main.coverage" NAME="main Coverage Results" MODIFIED="1636252309732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab4" />
+-    <SUITE FILE_PATH="coverage/NumericalAnalys$funcs.coverage" NAME="funcs Coverage Results" MODIFIED="1633947480203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3" />
++    <SUITE FILE_PATH="coverage/NumericalAnalys$funcs.coverage" NAME="funcs Coverage Results" MODIFIED="1636494829771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Anya" />
++    <SUITE FILE_PATH="coverage/NumericalAnalys$7_task__1_.coverage" NAME="7_task (1) Coverage Results" MODIFIED="1636497403133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Anya" />
+     <SUITE FILE_PATH="coverage/NumericalAnalys$pypy.coverage" NAME="pypy Coverage Results" MODIFIED="1631510861156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+     <SUITE FILE_PATH="coverage/NumericalAnalys$3.coverage" NAME="3 Coverage Results" MODIFIED="1633947862891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab3" />
+     <SUITE FILE_PATH="coverage/NumericalAnalys$3_task.coverage" NAME="3_task Coverage Results" MODIFIED="1636467204248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Anya" />
+Index: Anya/7_task.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Anya/7_task.py	(revision c4d96199faee8ae056bef4bce3c4038b293bc9cf)
++++ Anya/7_task.py	(revision c45df20d20a9634f9ba7bcfbe0faf46b073f38a6)
+@@ -1,23 +1,119 @@
++import math
++import sympy as sy
++import numpy as np
++from Anya.funcs import count_included_points as count_pts
+ 
++# s = """56,7 60,5 47,5 48,5 64,7 65,8 91,3 83,0 48,5 64,8
++# 16,5 27,5 51,5 28,0 52,5 50,5 49,0 55,5 61,5 55,2
++# 81,5 69,5 21,8 61,5 53,0 59,5 69,3 73,5 85,0 41,0
++# 56,4 55,3 56,2 75,5 36,5 38,5 26,9 76,9 58,5 63,7
++# 30,3 56,5 77,7 29,5 54,3 53,9 57,3 33,5 84,8 63,1
++# 57,8 65,1 34,9 60,9 58,2 55,3 55,9 53,9 64,0 48,9
++# 40,0 56, 5 33,5 46,2 64,0 54,3 24,9 44,9 42,1 44,1
++# 56,0 33,2 60,5 75,1 35,8 69,2 37,7 50,5 50,3 75,6
++# 52,8 83,2 43,6 75,7 45,8 36,5 49,5 96,5 52,6 69,5
++# 36,5 50,3 71,3 28,5 45,3 48,8 71,3 24,3 47,5 36,5"""
+ 
+-s = """56,7 60,5 47,5 48,5 64,7 65,8 91,3 83,0 48,5 64,8
+-16,5 27,5 51,5 28,0 52,5 50,5 49,0 55,5 61,5 55,2
+-81,5 69,5 21,8 61,5 53,0 59,5 69,3 73,5 85,0 41,0
+-56,4 55,3 56,2 75,5 36,5 38,5 26,9 76,9 58,5 63,7
+-30,3 56,5 77,7 29,5 54,3 53,9 57,3 33,5 84,8 63,1
+-57,8 65,1 34,9 60,9 58,2 55,3 55,9 53,9 64,0 48,9
+-40,0 56, 5 33,5 46,2 64,0 54,3 24,9 44,9 42,1 44,1
+-56,0 33,2 60,5 75,1 35,8 69,2 37,7 50,5 50,3 75,6
+-52,8 83,2 43,6 75,7 45,8 36,5 49,5 96,5 52,6 69,5
+-36,5 50,3 71,3 28,5 45,3 48,8 71,3 24,3 47,5 36,5"""
++s = """\
++66,7 70,5 57,5 58,5 74,7 75,8 99,9 58,5 93,0 74,8
++26,7 37,5 61,5 38,0 62,5 60,5 59,0 71,5 65,5 65,2
++91,5 79,5 31,8 71,5 63,0 69,5 79,3 95,0 83,5 51,0
++66,4 65,3 66,2 85,5 46,5 48,5 36,9 68,5 86,9 73,7
++40,3 66,5 87,7 39,5 64,3 63,9 67,3 94,8 43,5 73,1
++67,8 75,1 44,9 58,9 70,9 68,2 65,3 65,9 74,0 63,9
++50,0 66,5 43,5 56,2 74,0 64,3 34,9 52,1 44,9 54,1
++66,0 43,2 70,5 85,1 45,8 79,2 47,7 60,3 60,5 85,6
++62,8 93,2 53,6 85,7 55,8 46,5 59,5 62,6 92,8 79,5
++46,5 60,3 81,3 38,5 55,3 58,8 81,3 57,5 34,3 46,5
++"""
+ 
+ l = s.replace("\n", " ").replace(", ", ".").replace(",", ".").split()
+-
+ l = list(map(float, l))
+ 
+ if len(l) != 100:
+     raise Exception("IncorrectData")
+ 
++l = np.array(l)
++l.sort()
++
++R = l.max() - l.min()
++n_len = l.shape[0]
++L = round(R / (1 + 3.322*math.log10(100)))
++xmin = l.min()
++xmax = l.max()
++
++x0 = xmin - L / 2
++xi = xmax + L / 2
++intervals = np.arange(x0, xi, 10)
++intervals = intervals.tolist()
++
++if intervals[-1] != xi:
++    intervals = intervals[:-1]
++
++intervals = list(map(lambda x: (x, x+L), intervals))
++
++intervals[-1] = intervals[-1][0], xi
++
++int_copy = intervals.copy()
++
++intervals = list(map(lambda x: str(x), intervals))
++intervals = list(map(lambda x: "[" + x[1:], intervals))
++s_intervals = "; ".join(intervals).replace(",", ";")
++
++ni = [count_pts(i, l) for i in int_copy]
++n = [100 for i in int_copy]
++wi = [ni[i]/n[i] for i in range(len(int_copy))]
++
++mmat_pic_1 = np.array([intervals, ni, n, wi])
++
++xi_for_pic_2 = [(i[0] + i[1])/2 for i in int_copy]
++xi_for_pic_2[-1] = round(xi_for_pic_2[-1], 3)
++
++mmat_pic_2 = np.array([xi_for_pic_2, ni, n, wi])
++s_mmat_2 = np.array([xi_for_pic_2, ni, n, wi], dtype=str)
++
++out = f"""\
++Решение:
++1) определим максимальное и минимальное значение имеющихся значений: х_min = {l.min()}; х_max = {l.max()}
++2) Выстроим в порядке возрастания, имеющиеся у нас значения (табл.2)
++{l.reshape(10,10)}
++
++3) Определим размах R: R = х_max - х-min = {l.max()} - {l.min()} = {l.max() - l.min()}
++4) l = R / (1 + 3.322*lg({n_len})) = {R} / (1 + 3.322*{math.log10(100)}) = {R / (1 + 3.322*math.log10(100))} ~ \
++{round(R / (1 + 3.322*math.log10(100)))}
++
++Нижняя граница х0 = хmin - L / 2 = {xmin} - {L} / 2 = {xmin - L / 2};
++Верхняя граница хi = хmax + L / 2 = {xmax} + {L} / 2 = {xmax + L / 2},
++следовательно, у нас имеются интервалы: 
++{s_intervals}
++
++5) wi = ni / n
++
++Названия строк по номерам (вписать в таблице)
++1: xi
++2: ni
++3: n
++4: wi
++
++{mmat_pic_1}
++
++Рис. 1. Гистограмма относительных частот
++
++Перейдем от составленного интервального распределения к точечному выборочному распределению, взяв за значение признака \
++середины частичных интервалов. Построим полигон относительных частот и найдем эмпирическую функцию распределения, построим ее график:
++
++Названия строк по номерам (вписать в таблице)
++1: xi
++2: ni
++3: n
++4: wi
++
++{s_mmat_2}
++
++Рис. 2. График интервального распределения
+ 
+-print(l)
+-print(len(l))
+\ No newline at end of file
++
++"""
++# TODO Дописать остальные пункты, сделать графики.
++
++print(out)
+Index: Anya/funcs.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Anya/funcs.py	(revision c4d96199faee8ae056bef4bce3c4038b293bc9cf)
++++ Anya/funcs.py	(revision c45df20d20a9634f9ba7bcfbe0faf46b073f38a6)
+@@ -25,3 +25,20 @@
+         return func_array[1]
+     else:
+         return func_array[2]
++
++def count_included_points(interval, points):
++    """
++    Count number of points that are in interval.
++
++    :param interval: interval where we check points.
++    :param points: array of points.
++    :return: number of points that are in interval.
++    """
++
++    count = 0
++    for i in points:
++        if interval[0] <= i and i < interval[1]:
++            # print(f"{interval[0]} <= {i} < {interval[1]}; \n{interval[0]} >= {i} and {i} < {interval[1]} = {interval[0] >= i and i < interval[1]}")
++            count += 1
++
++    return count
