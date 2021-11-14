@@ -39,3 +39,23 @@ def count_included_points(interval, points):
            # print(f"{interval[0]} <= {i} < {interval[1]}; \n{interval[0]} >= {i} and {i} < {interval[1]} = {interval[0] >= i and i < interval[1]}")
            count += 1
     return count
+
+def dot_plus(l1, l2):
+    s = ""
+    for i in range(len(l1)):
+        s += str(l1[i]) + "*" + str(l2[i])
+        s += " + "
+
+    s = s[:-1-1]
+
+    return s
+
+def s_mas(l):
+    s = ""
+    for i in range(len(l)):
+        s += str(l[i])
+        s += " + "
+
+    s = s[:-1 - 1]
+
+    return s
