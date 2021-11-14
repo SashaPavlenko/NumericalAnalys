@@ -5,12 +5,12 @@ import numpy as np
 
 
 x = sy.Symbol('x')
-a, b = -0.5, 0.5
+a, b = -2, -1
 const = lambda val: (x*1).subs(x, val)
 
 F_int = [
     const(0),
-    x+1/2,
+    x+2,
     const(1),
 ]
 
@@ -40,4 +40,4 @@ print(out_int, out_diff, sep="\n")
 
 print(f"M(X) = ({a} + {b}) / 2 = {MX}")
 print(f"D(X) = ({b} - {a})^2/12 = {DX}")
-print(f"standart_deviation = sqrt({DX}) = {s_deviation}")
+print(f"σ = sqrt({DX}) = {s_deviation}")

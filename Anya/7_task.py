@@ -3,7 +3,7 @@ import sympy as sy
 import numpy as np
 from Anya.funcs import count_included_points as count_pts, dot_plus, s_mas
 
-with open("7_tasks/6 вариант/данные.txt", "r") as f:
+with open("7_tasks/9 вариант/данные.txt", "r") as f:
     s = f.read()
 
 # s = """\
@@ -83,6 +83,9 @@ ss = ss[:-1-1]
 D = ssum
 squadr = n_len / (n_len-1) * D
 out = f"""\
+Исходная таблица
+{l_copy}
+
 Решение:
 - Составим интервальное распределение выборки
 
@@ -130,8 +133,8 @@ w_(i)
 {mmat_pic_1}
 
 Вадим, рисуем гистограмму с этими значениями 
-Ось х: {list(map(lambda x: x[1],int_copy))}
-Ось у: {list(map(lambda x: float(x), mmat_pic_1[3]))}
+x = {list(map(lambda x: x[1],int_copy))}
+y = {list(map(lambda x: float(x), mmat_pic_1[3]))}
 
 - Перейдем от составленного интервального распределения к точечному выборочному распределению, взяв за значение признака \
 середины частичных интервалов.
@@ -181,7 +184,7 @@ D = ∑_(i=1)^{mmat_pic_1[0].shape[0]}▒(x_i - X_cp)^2*w_i =
 = {D}
 
 Исправленная выборочная дисперсия
-S^2 = N/(N-1)*D = {n_len}/({n_len-1}) * {D} = {squadr}
+S^2 = N/(N-1)*D = {n_len}/({n_len-1}) * {D} ≈ {squadr}
 
 Выборочное среднее квадратичное отклонение:
 σ = √(D) = √({D}) ≈ {D**0.5}
@@ -276,6 +279,5 @@ y_x = {res*v4/v3} * x + {v2 - v1*res*v4/v3}
 r_xy = {res}
 
 """
-# TODO Дописать остальные пункты, сделать графики.
 
 print(out)

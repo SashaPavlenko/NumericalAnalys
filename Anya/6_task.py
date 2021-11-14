@@ -10,7 +10,7 @@ f = 1/sy.sqrt(2*sy.pi)*sy.Integral(sy.exp(-t*t/2), (t, 0, x)).doit()
 # Интеграл верятностей Лапласа
 PHI = lambda val: f.subs(x, val).evalf()
 
-a, deviation, alpha, beta, delta = 20, 7, 22, 27, 2
+a, deviation, alpha, beta, delta = 15, 4, 15, 19, 1.5
 
 out = f"""\
 Условие задачи:
@@ -35,9 +35,9 @@ P_1 = P({alpha} < x < {beta}) = PHI(({beta} - {a})/{deviation}) - PHI(({alpha} -
 чем на delta = {delta} мм, очевидно, что есть вероятность того, что длина детали попадает 
 в интервал [{a} - {delta}; {a} + {delta}] и потому вычисляется также с помощью функции Лапласа:
 
-P(a-delta < x < a+delta) = PHI(delta/deviation) - PHI(-delta/deviation)
-P_2 = P({a}-{delta} < x < {a}+{delta}) = PHI({delta}/{deviation}) - PHI(-{delta}/{deviation}) =
-= 2 * PHI({delta}/{deviation}) = 2*PHI({delta/deviation}) =  2*{PHI(delta/deviation)} =
+P(a-delta < x < a+delta) = Φ(delta/deviation) - Φ(-delta/deviation)
+P_2 = P({a}-{delta} < x < {a}+{delta}) = Φ({delta}/{deviation}) - Φ(-{delta}/{deviation}) =
+= 2 * Φ({delta}/{deviation}) = 2*Φ({delta/deviation}) =  2*{PHI(delta/deviation)} =
 = {2*PHI(delta/deviation)}
 """
 
