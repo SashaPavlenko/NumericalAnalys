@@ -15,18 +15,27 @@ def secant(f, a, b, eps=1e-5, iter_num=False):
     it = 1
     # Stage 4.
     x2 = x1 - (func(x1) * (x1 - x0)) / (func(x1) - func(x0))
+    s = lambda x0, x1, x2: f"x2 = x1 - (func(x1) * (x1 - x0)) / (func(x1) - func(x0)) \n\
+    = {x1} - (func({x1}) * ({x1} - {x0})) / (func({x1}) - func({x0})) \n\
+    = {x1} - ({func(x1) * (x1 - x0)}) / ({func(x1) - func(x0)}) = {x2}\n"
+    print(s(x0, x1, x2))
 
     while abs(func(x2)) > eps:
         # Stage 5.1.
+        print(f"cond: abs(func({x2})) = {abs(func(x2))} > {eps}")
+        print(f"func(x0) * func(x2) < 0\n{func(x0)} * {func(x2)} = {func(x0) * func(x2)} < 0\n")
         if func(x0) * func(x2) < 0:
             x1 = x2
+            print(f"x1 = x2 = {x2}")
         else:
             x0 = x2
+            print(f"x0 = x2 = {x2}")
 
         it += 1
 
         # Stage 5.2.
         x2 = x1 - (func(x1) * (x1 - x0)) / (func(x1) - func(x0))
+        print(s(x0, x1, x2))
 
     x_star = x2
     if iter_num:

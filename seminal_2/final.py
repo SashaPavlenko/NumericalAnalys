@@ -52,6 +52,8 @@ def Emita(XY, delta=0.5, do_plot=False, retern_points=False, divided_differenses
         y = l[0][i]
         N += y * get_x(l, i - 1)
 
+    sy.pprint(N)
+
     N = sy.simplify(N)
 
     x_points = np.arange(XY['x'][0]-delta, XY['x'][-1]+delta, 0.1)

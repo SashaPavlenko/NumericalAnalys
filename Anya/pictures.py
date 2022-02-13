@@ -4,10 +4,8 @@ import numpy as np
 
 n_bins = 20
 
-x = [22.5, 34.5, 46.5, 58.5, 70.5, 82.5, 94.5]
-y = [0.07, 0.15, 0.21, 0.33, 0.15, 0.07, 0.02]
-
-
+x = [25.2, 37.2, 49.2, 61.2, 73.2, 85.2, 97.2]
+y = [0.03, 0.13, 0.15, 0.35, 0.2, 0.1, 0.04]
 
 p1 = plt.plot(x, y, '-go')
 # plt.grid(axis="y")
@@ -15,3 +13,4 @@ p1 = plt.plot(x, y, '-go')
 plt.show()
 
 print(" ".join(list(map(str, x))))
+print(f"sorted y: {sorted(y, reverse=True)}")

@@ -3,8 +3,8 @@ from seminal_2 import final
 
 XY = {
     'x': [1, 2, 3],
-    'f': [15, 29, 55],
-    'df': ['', 19, ''],
+    'f': [12, 27, 54],
+    'df': ['', 20, ''],
 }
 
 l = final.Emita(XY, divided_differenses=True)

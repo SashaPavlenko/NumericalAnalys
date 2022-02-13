@@ -3,8 +3,8 @@ import numpy as np
 import functools as ft
 
 n = 100
-n_x = [7, 15, 21, 33, 15, 7, 2]
-x_i = [22.5, 34.5, 46.5, 58.5, 70.5, 82.5, 94.5]
+n_x = [3, 13, 15, 35, 20, 10, 4]
+x_i = [25.2, 37.2, 49.2, 61.2, 73.2, 85.2, 97.2]
 
 
 ccount = 0
@@ -29,6 +29,6 @@ x_i = [x_i[0]-5] + x_i
 print(out)
 
 p1 = plt.plot(x_i, y, '-go')
-plt.grid(axis="y")
+# plt.grid(axis="y")
 plt.savefig('рис2.png')
 plt.show()
